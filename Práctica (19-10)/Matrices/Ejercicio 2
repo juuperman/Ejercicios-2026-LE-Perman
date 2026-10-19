@@ -1,0 +1,19 @@
+//Vectores 2
+// Crear un código que una vez indicados los datos que almacena un vector, sume todos sus datos y los imprima.
+
+#include <stdio.h>
+
+int main() {
+    int vector[4];
+    int suma = 0, dato; // Inicializamos suma en 0 para evitar basura en la memoria
+    
+    for (int i = 0; i < 4; i++) {
+        printf("Ingrese el número deseado para la posición número %d\n", i);
+        scanf("%d", &vector[i]);
+        suma += vector[i];
+    }
+    
+    printf("La suma es %d\n", suma);
+    
+    return 0;
+}
