@@ -1,0 +1,17 @@
+//Vectores 1
+// Crear un código en C que le permita al usuario modificar los datos de un vector y luego que el programa imprima los datos 1 por 1.
+
+#include <stdio.h>
+
+int main() {
+int vector [4];
+int dato;
+for (int i=0;i<4;i++){
+    printf("Ingrese el número deseado para la posición número %d\n", i);
+    scanf("%d", &vector[i]);
+}
+for(int n=0;n<4;n++){
+printf("Los datos almacenados son: %d\n", vector[n]);
+}
+    return 0;
+}
