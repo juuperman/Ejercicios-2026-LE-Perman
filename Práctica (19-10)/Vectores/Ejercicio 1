@@ -1,0 +1,15 @@
+//Crear un código en C que le permita al usuario modificar los datos de un vector y luego que el programa imprima los datos 1 por 1. 
+#include <stdio.h>
+
+int main()
+{
+    int vector[4];
+    for(int i=0;i<4;i++){
+        printf("Ingrese el valor deseado para la posición número %d\n", i);
+        scanf("%d", &vector[i]);
+    }
+    for(int n=0;n<4;n++){
+        printf("El valor de la posición número %d es %d\n", n, vector[n]);
+    }
+    return 0;
+}
